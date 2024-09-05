@@ -7,43 +7,46 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>CleanMat - Coming Soon</title>
-
 </head>
 <body>
 
-<div class="container">
-    <!-- Left section with image -->
-    <div class="left">
-        <img src="landing_img.jpg" alt="Coming Soon Image">
-    </div>
+    <div class="container">
+        <!-- Header section with title -->
+        <header>
+            <nav style="visibility:collapse;">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>    
+                    <li><a href="#">Shop</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <!-- Right section with text and form -->
-    <div class="right">
-        <h1>Coming Soon ...</h1>
-        <p>Sign up to be the first to know when we launch.</p>
+        <!-- Main content split into left and right sections -->
+        <section class="content">
+            <!-- Left side with text -->
+            <div class="left-side">
+                <h1>Get Notified When We Launch</h1>
+                <p>Be the first to know when we launch.</p>
 
-        <!-- Formspree form to collect emails -->
-        <form action="https://formspree.io/f/xdknjzbk" method="POST">
+                <!-- Formspree form to collect emails -->
+                <form action="https://formspree.io/f/xdknjzbk" method="POST">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Notify Me</button>
+                </form>
 
-            <input type="email" name="email" placeholder="Enter your email" required>
-       
-            <button type="submit">Notify Me</button>
-        </form>
-
-        <div class="contact-info">
-          
-                <p><i class="fab fa-whatsapp"></i> (254)-704 -514-593 | <i class="fas fa-envelope"></i> cleanmatke@gmail.com </li></p>
-          
             </div>
-           
-           
-        </div>
+    
+            <!-- Right side with images -->
+          
+        </section>
 
+        <!-- Footer with contact info -->
+        <footer>
+    
  
-
-       
+        </footer>
     </div>
-</div>
 
 </body>
 </html>
