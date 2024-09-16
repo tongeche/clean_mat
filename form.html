@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Marketplace Survey</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #7A55DB;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #6442bb;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <p>Please provide the information to help us understand your needs better.</p>
+
+    <!-- Age selection -->
+    <div class="form-group">      
+        <label for="age">Select Age Group</label>
+        <select id="age" required>
+            <option value="">Select Age Group...</option>
+            <option value="below14">Below 14</option>
+            <option value="15-17">15-17</option>
+            <option value="18-25">18-25</option>
+            <option value="26-35">26-35</option>
+            <option value="36-45">36-45</option>
+            <option value="46-60">46-60</option>
+            <option value="60+">60+</option>
+        </select>
+    </div>
+
+    <!-- Service or client section -->
+    <div id="serviceOrClientSection" class="hidden form-group">
+        <label for="role">Are you a customer or a service provider?</label>
+        <select id="role" required>
+            <option value="">Select your role...</option>
+            <option value="customer">Customer</option>
+            <option value="provider">Service Provider</option>
+        </select>
+    </div>
+
+    <!-- Customer Section -->
+    <div id="customerSection" class="hidden">
+        <h4>Customer Section</h4>
+        <div class="form-group">
+            <label for="laundryNeeds">What are your key laundry needs? (Select all that apply)</label>
+            <select id="laundryNeeds" multiple required>
+                <option value="washing">Washing</option>
+                <option value="drying">Drying</option>
+                <option value="ironing">Ironing</option>
+                <option value="stain-removal">Stain Removal</option>
+                <option value="folding">Folding</option>
+                <option value="dry-cleaning">Dry Cleaning</option>
+                <option value="pickup-delivery">Pick-up and Delivery</option>
+            </select>
+            <small>Select multiple options by holding down Ctrl (Windows) or Command (Mac) while clicking.</small>
+        </div>
+        
+        <div class="form-group">
+            <label for="laundryFrequency">How often do you use laundry services?</label>
+            <select id="laundryFrequency">
+                <option value="">Select...</option>
+                <option value="weekly">Weekly</option>
+                <option value="bi-weekly">Bi-weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="occasionally">Occasionally</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="budget">What is your budget for laundry services?</label>
+            <input type="number" id="budget" placeholder="Enter your budget">
+        </div>
+        <div class="form-group">
+            <label for="paymentMethod">Preferred Payment Method:</label>
+            <select id="paymentMethod">
+                <option value="">Select...</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="cash">Cash</option>
+                <option value="mobile">Mobile Payment</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Service Provider Section -->
+    <div id="providerSection" class="hidden">
+        <h4>Service Provider Section</h4>
+        <div class="form-group">
+            <label for="services">What services do you provide?</label>
+            <select id="services" required>
+                <option value="wash-fold">Wash and Fold</option>
+                <option value="dry-cleaning">Dry Cleaning</option>
+                <option value="pickup-delivery">Pick-up and Delivery</option>
+                <option value="all">All of the above</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="charges">How much do you charge per kg of clothes?</label>
+            <select id="charges" name="fees" required>
+                <option value="">Select a price range...</option>
+                <option value="100">Less than Ksh 100 per kg</option>
+                <option value="200">Ksh 100 - Ksh 200 per kg</option>
+                <option value="300">Ksh 200 - Ksh 300 per kg</option>
+                <option value="400">Ksh 300 - Ksh 400 per kg</option>
+                <option value="500">Ksh 400 - Ksh 500 per kg</option>
+                <option value="600">Ksh 500 - Ksh 600 per kg</option>
+                <option value="800">Ksh 600 - Ksh 800 per kg</option>
+                <option value="1000">More than Ksh 800 per kg</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="availability">What is your availability?</label>
+            <select id="availability">
+                <option value="">Select availability...</option>
+                <option value="weekdays">Weekdays</option>
+                <option value="weekends">Weekends</option>
+                <option value="both">Both</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="pickupDrop">Do you offer pick-up and drop services?</label>
+            <select id="pickupDrop">
+                <option value="">Select...</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        <div id="extraChargesSection" class="hidden form-group">
+            <label for="extraCharges">Do you charge extra for pick-up and drop?</label>
+            <select id="extraCharges">
+                <option value="">Select...</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        <div id="socialSection" class="hidden form-group">
+            <label for="website">Do you have a website or social handle?</label>
+            <input type="text" id="website" placeholder="Enter your website or social handle">
+        </div>
+    </div>
+
+    <button id="submitButton" class="hidden">Submit</button>
+</div>
+
+<script>
+    document.getElementById('age').addEventListener('change', function() {
+        var ageGroup = this.value;
+        if (ageGroup === "below14") {
+            alert('Sorry, you are too young to participate.');
+        } else if (ageGroup === "15-17") {
+            alert('Sorry, this survey is for adults only.');
+        } else {
+            document.getElementById('serviceOrClientSection').classList.remove('hidden');
+        }
+    });
+
+    document.getElementById('role').addEventListener('change', function() {
+        var role = this.value;
+        if (role === "customer") {
+            document.getElementById('customerSection').classList.remove('hidden');
+            document.getElementById('providerSection').classList.add('hidden');
+            document.getElementById('submitButton').classList.remove('hidden');
+        } else if (role === "provider") {
+            document.getElementById('providerSection').classList.remove('hidden');
+            document.getElementById('customerSection').classList.add('hidden');
+            document.getElementById('submitButton').classList.remove('hidden');
+        }
+    });
+
+    document.getElementById('pickupDrop').addEventListener('change', function() {
+        var pickupDrop = this.value;
+        if (pickupDrop === "yes") {
+            document.getElementById('extraChargesSection').classList.remove('hidden');
+            document.getElementById('socialSection').classList.remove('hidden');
+        } else {
+            document.getElementById('extraChargesSection').classList.add('hidden');
+            document.getElementById('socialSection').classList.remove('hidden');
+        }
+    });
+</script>
+
+</body>
+</html>

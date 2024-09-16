@@ -1,0 +1,37 @@
+
+S1 Small introduction 
+
+-> Q0 - Age group:
+    if age >14 then continue else stop; 
+    if age > 18 then continue else stop;
+next question: 
+Check if service provider or a client who need laundry services:( ask question )
+if customer  == show customer section 
+else if !== customer 
+    show the service privider section
+
+//
+
+/section - SErvice provider 
+
+- Questions that understands the service privider services, fees ( Ksh.. it should be in Float values ), availabilty,
+  if availabilty ask question of time or working hours
+  prompt if the service provider offer pick up and drop services if true
+    ask if he charges extar if yes follow up 
+    if no then skip
+    ask if he has a website or social media handle
+
+
+
+/section of customer 
+- Questions that understands the customer needs,
+ask for their laundry habits washing drying also how often they use laundry service and where or when 
+ask yes and no question if answer if yes folow up otherwise skeep to next next question
+
+- ask for their budget and how they want to pay for the service if no skip
+- ask for their preferred laundry service provider
+- ask for their preferred laundry service provider
+
+
+
+if they choose all the above next question be individual questions of options asked 
