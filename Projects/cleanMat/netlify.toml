@@ -1,3 +1,4 @@
 [build]
-  command = ""      # or your Tailwind build script
-  publish = "."     # point Netlify at the project root
+  base    = "projects/cleanmat"
+  publish = "."
+  command = ""    # or your Tailwind build script, if you ever add one
