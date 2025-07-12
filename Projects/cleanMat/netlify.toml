@@ -1,9 +1,9 @@
 [build]
-  # remove or comment out the base line entirely
-  # base    = "projects/cleanmat"
+  # no base needed unless you have a build step inside a subfolder
+  # base    = ""
 
-  # publish from the repo root (where index.html lives)
-  publish = "."
+  # publish from the cleanMat folder
+  publish = "Projects/cleanMat"
 
-  # if you have no build step, you can leave this empty
+  # no build command
   command = ""
