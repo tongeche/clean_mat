@@ -1,0 +1,9 @@
+[build]
+  # no base needed unless you have a build step inside a subfolder
+  # base    = ""
+
+  # publish from the cleanMat folder
+  publish = "Projects/cleanMat"
+
+  # no build command
+  command = ""
