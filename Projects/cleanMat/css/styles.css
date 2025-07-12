@@ -1,0 +1,71 @@
+
+/* Custom colors for CleanMat */
+.bg-cleanmat-dark {
+    background-color: #242D3D;
+    /* Dark blue from your header */
+}
+
+.text-cleanmat-green {
+    color: #4CAF50;
+    /* A placeholder green for accents, adjust if needed */
+}
+
+.bg-cleanmat-blue {
+    background-color: #3B82F6;
+    /* A common blue for buttons, adjust if needed */
+}
+
+.hover-bg-cleanmat-blue-darker:hover {
+    background-color: #2563EB;
+    /* Darker shade for hover effect */
+}
+
+.text-cleanmat-light-gray {
+    color: #F3F4F6;
+    /* Light gray for text on dark backgrounds */
+}
+
+.border-cleanmat-gray {
+    border-color: #E5E7EB;
+    /* Light gray border for general elements */
+}
+
+/* New custom colors based on the Widsin design */
+.bg-widsin-purple {
+    background-color: #A3B3B8;
+    /* A deep purple for the new header/hero background */
+}
+
+.text-widsin-light-purple {
+    color: #0f0f0f;
+    /* Lighter purple for text on dark backgrounds */
+}
+
+.bg-widsin-blue-btn {
+    background-color: #2563EB;
+    /* A blue for the Partner button */
+}
+
+.hover-bg-widsin-blue-btn-darker:hover {
+    background-color: #1E40AF;
+    /* Darker blue for hover */
+}
+
+/* Adjusted background for bubbles for a more subtle effect initially */
+.bg-hero-bubbles {
+    background-image: radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 60%),
+        radial-gradient(circle at 90% 80%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 60%),
+        radial-gradient(circle at 40% 60%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 60%);
+    background-size: 800px 800px, 600px 600px, 500px 500px;
+    background-repeat: no-repeat;
+    background-position: top left, bottom right, center center;
+}
+
+.bg-contact-blue {
+    background-color: #A3B3B8;
+    /* A vibrant blue, adjust if exact hex is different */
+}
+
+.bg-contact-blue-darker:hover {
+    background-color: #A3B3B8;
+}

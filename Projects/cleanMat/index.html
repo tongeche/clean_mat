@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanMat - Laundry Marketplace</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="/js/sript.js"></script>
+
+</head>
+
+<body class="bg-gray-100 font-sans antialiased">
+
+    <header class="bg-cleanmat-dark text-white p-4 shadow-md">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <div class="h-8 w-8 bg-cleanmat-green rounded-full flex items-center justify-center">
+                    <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10 2a8 8 0 100 16 8 8 0 000-16zM8 9a1 1 0 11-2 0 1 1 0 012 0zm4 0a1 1 0 11-2 0 1 1 0 012 0zm-3 4a3 3 0 003-3H6a3 3 0 003 3z">
+                        </path>
+                    </svg>
+                </div>
+                <span class="text-xl font-semibold text-cleanmat-light-gray">CleanMat</span>
+                <span class="text-sm ml-2 text-cleanmat-light-gray">Services</span>
+            </div>
+
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#home" class="text-cleanmat-light-gray hover:text-white transition duration-200">Home</a>
+                <a href="#about" class="text-cleanmat-light-gray hover:text-white transition duration-200">About Us</a>
+                <a href="#how-it-works" class="text-cleanmat-light-gray hover:text-white transition duration-200">How it
+                    Works</a>
+                <a href="#services"
+                    class="text-cleanmat-light-gray hover:text-white transition duration-200">Services</a>
+                <a href="#footer" class="text-cleanmat-light-gray hover:text-white transition duration-200">Contact
+                    Us</a>
+                <a href="#footer"
+                    class="bg-cleanmat-green hover:bg-green-600 text-white font-semibold py-2 px-4 rounded transition duration-300 ease-in-out">Partner
+                    With Us</a>
+            </nav>
+
+            <button class="md:hidden text-cleanmat-light-gray focus:outline-none" id="mobile-menu-button">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="md:hidden mt-4 hidden" id="mobile-menu">
+            <nav class="flex flex-col space-y-4 text-center">
+                <a href="#home" class="block text-cleanmat-light-gray hover:text-white py-2"
+                    onclick="document.getElementById('mobile-menu').classList.add('hidden');">Home</a>
+                <a href="#about" class="block text-cleanmat-light-gray hover:text-white py-2"
+                    onclick="document.getElementById('mobile-menu').classList.add('hidden');">About Us</a>
+                <a href="#how-it-works" class="block text-cleanmat-light-gray hover:text-white py-2"
+                    onclick="document.getElementById('mobile-menu').classList.add('hidden');">How it Works</a>
+                <a href="#services" class="block text-cleanmat-light-gray hover:text-white py-2"
+                    onclick="document.getElementById('mobile-menu').classList.add('hidden');">Services</a>
+                <a href="#contact" class="block text-cleanmat-light-gray hover:text-white py-2"
+                    onclick="document.getElementById('mobile-menu').classList.add('hidden');">Contact Us</a>
+                <a href="#partner"
+                    class="block bg-cleanmat-green hover:bg-green-600 text-white font-semibold py-2 px-4 rounded transition duration-300 ease-in-out"
+                    onclick="document.getElementById('mobile-menu').classList.add('hidden');">Partner With Us</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="bg-widsin-purple text-white py-16 md:py-24 bg-hero-bubbles relative overflow-hidden">
+            <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+                <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0 z-10">
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">
+                        Experience new <br>Revolution of Laundry with CleanMat
+                    </h1>
+                    <p class="text-lg md:text-xl text-widsin-light-purple mb-8">
+                        Don't be an armchair quarterback when choosing a laundry service for your laundry.<br> Need.
+                        Come see the difference with us!
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                        <a href="#"
+                            class="inline-flex items-center bg-gray-800 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-gray-700 transition-colors duration-300">
+                            <i class="fab fa-apple text-3xl mr-3"></i>
+                            <div>
+                                <p class="text-xs opacity-75">Download on the</p>
+                                <p class="text-lg font-semibold">App Store</p>
+                            </div>
+                        </a>
+                        <a href="#"
+                            class="inline-flex items-center bg-gray-800 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-gray-700 transition-colors duration-300">
+                            <i class="fab fa-google-play text-3xl mr-3"></i>
+                            <div>
+                                <p class="text-xs opacity-75">GET IT ON</p>
+                                <p class="text-lg font-semibold">Google Play</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:w-1/2 flex justify-center md:justify-end z-10">
+                    <img src="/img/mobile.png" alt="Laundry App Illustration" class="w-full max-w-md h-auto">
+                </div>
+
+                <div class="absolute inset-0 bg-hero-bubbles pointer-events-none"></div>
+            </div>
+        </section>
+        <section class="bg-white py-10 md:py-16 relative z-20">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-widsin-purple mb-4">
+        Find Nearby Lockers & Laundry Services
+      </h2>
+      <p class="text-gray-600 text-lg">
+        Enter your location to discover CleanMat partners near you.
+      </p>
+    </div>
+
+    <form class="max-w-3xl mx-auto flex flex-col sm:flex-row items-center gap-4">
+      <input 
+        type="text" 
+        placeholder="Enter your location or postal code..." 
+        class="w-full px-5 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-widsin-purple text-gray-700"
+      />
+
+      <button 
+        type="submit" 
+        class="w-full sm:w-auto bg-widsin-purple hover:bg-widsin-dark-purple text-white px-6 py-3 rounded-lg transition-colors duration-300 shadow-md"
+      >
+        Search
+      </button>
+    </form>
+  </div>
+</section>
+
+
+        <section id="about" class="py-16 md:py-24 bg-white relative">
+
+            <div class="container mx-auto px-4">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="md:pr-8 flex justify-center md:justify-end">
+                        <img src="/img/mama-proud.png" alt="Folded Laundry Stack"
+                            class="rounded-lg shadow-xl w-full h-auto object-cover max-w-md">
+                    </div>
+
+                    <div class="flex flex-col items-center md:items-start text-center md:text-left">
+
+                        <p class="text-lg text-gray-700 mb-6">
+                            CleanMat is an online laundrette headquartered in Vila Nova de Gaia, Portugal. We proudly
+                            serve both individual clients and businesses by connecting them with the most reputable and
+                            convenient laundry services in their area.
+
+                            In addition to helping you find the best local providers, we also partner with locker
+                            installers to offer secure, on-demand pickup and delivery solutions — making laundry easier,
+                            faster, and more accessible than ever.
+                        </p>
+
+
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4 mt-8">Our cleaning service includes:</h3>
+                        <ul class="text-lg text-gray-700 space-y-2 list-none p-0">
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-cleanmat-blue mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                washing and ironing
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-cleanmat-blue mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                dry-cleaning
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-cleanmat-blue mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                ironing
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-cleanmat-blue mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                washing and caring for hotel bedding and clothing
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-cleanmat-blue mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                shoe repairs and sewing
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-cleanmat-blue mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                we clean leathers and carpets, curtains, blinds and, should it be necessary, we take
+                                down and replace such items.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+        <section id="services" class="py-16 md:py-24 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">Why you'll love CleanMat</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
+                    <div
+                        class="lg:col-span-1 bg-white rounded-lg shadow-lg overflow-hidden flex flex-col items-center justify-between p-6 text-center">
+                        <img src="/img/washing_machine.png" alt="Washing Machine"
+                            class="w-full h-auto rounded-lg mb-4 object-cover">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Sustainable laundry and dry cleaning</h3>
+                        <p class="text-gray-700 text-sm flex-grow">
+                            We use eco-friendly practices and products for a cleaner planet.
+                        </p>
+                    </div>
+
+                    <div
+                        class="lg:col-span-1 bg-white rounded-lg shadow-lg overflow-hidden flex flex-col items-center justify-between p-6 text-center">
+                        <img src="/img/clothes_hunger.png" alt="Hanger Clothes"
+                            class="w-full h-auto rounded-lg mb-4 object-cover">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">World-class customer service</h3>
+                        <p class="text-gray-700 text-sm flex-grow">
+                            Our dedicated team is here to ensure your satisfaction every step of the way.
+                        </p>
+                    </div>
+
+                    <div
+                        class="lg:col-span-1 bg-white rounded-lg shadow-lg overflow-hidden flex flex-col items-center justify-between p-6 text-center">
+                        <img src="/img/folded-clothes-img.webp" alt="Happy Customer"
+                            class="w-full h-auto rounded-lg mb-4 object-cover">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Free Folding Services</h3>
+                        <p class="text-gray-700 text-sm flex-grow">
+                            This one is on us. We'll fold your laundry for free.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex justify-center mt-12 space-x-4">
+                    <button
+                        class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full transition duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                        </svg>
+                    </button>
+                    <button
+                        class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full transition duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="faq" class="py-16 md:py-24 bg-[#1A1A2E] text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-12">
+                    Frequently asked questions
+                </h2>
+
+                <div class="max-w-3xl mx-auto">
+                    <div class="border-b border-gray-700 py-4 cursor-pointer" data-accordion-item>
+                        <div class="flex justify-between items-center" data-accordion-header>
+                            <h3 class="text-xl font-semibold">What services does CleanMat offer?</h3>
+                            <i class="fas fa-plus text-gray-400 text-lg transition-transform duration-300"></i>
+                        </div>
+                        <div class="pt-4 hidden" data-accordion-content>
+                            <p class="text-gray-300 leading-relaxed text-left">
+                                CleanMat connects you with various laundry service providers offering wash & fold, dry
+                                cleaning, ironing, and specialized care for delicate items.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border-b border-gray-700 py-4 cursor-pointer" data-accordion-item>
+                        <div class="flex justify-between items-center" data-accordion-header>
+                            <h3 class="text-xl font-semibold">How do I schedule a pickup?</h3>
+                            <i class="fas fa-plus text-gray-400 text-lg transition-transform duration-300"></i>
+                        </div>
+                        <div class="pt-4 hidden" data-accordion-content>
+                            <p class="text-gray-300 leading-relaxed text-left">
+                                Simply click the "Schedule a Pickup" button, enter your details, choose your preferred
+                                time, and have your laundry ready for the driver.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border-b border-gray-700 py-4 cursor-pointer" data-accordion-item>
+                        <div class="flex justify-between items-center" data-accordion-header>
+                            <h3 class="text-xl font-semibold">Are there any hidden fees?</h3>
+                            <i class="fas fa-plus text-gray-400 text-lg transition-transform duration-300"></i>
+                        </div>
+                        <div class="pt-4 hidden" data-accordion-content>
+                            <p class="text-gray-300 leading-relaxed text-left">
+                                No, CleanMat is transparent about pricing. All costs are clearly displayed before you
+                                confirm your service.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border-b border-gray-700 py-4 cursor-pointer" data-accordion-item>
+                        <div class="flex justify-between items-center" data-accordion-header>
+                            <h3 class="text-xl font-semibold">Can I specify my laundry preferences?</h3>
+                            <i class="fas fa-plus text-gray-400 text-lg transition-transform duration-300"></i>
+                        </div>
+                        <div class="pt-4 hidden" data-accordion-content>
+                            <p class="text-gray-300 leading-relaxed text-left">
+                                Yes, when placing your order, you can add notes for specific preferences, such as
+                                detergent type, folding style, or any special instructions for delicate items.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border-b border-gray-700 py-4 cursor-pointer" data-accordion-item>
+                        <div class="flex justify-between items-center" data-accordion-header>
+                            <h3 class="text-xl font-semibold">How long does the service take?</h3>
+                            <i class="fas fa-plus text-gray-400 text-lg transition-transform duration-300"></i>
+                        </div>
+                        <div class="pt-4 hidden" data-accordion-content>
+                            <p class="text-gray-300 leading-relaxed text-left">
+                                Most standard wash & fold services are completed within 24-48 hours. Dry cleaning and
+                                specialized services may take longer, as specified by the provider.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border-b border-gray-700 py-4 cursor-pointer" data-accordion-item>
+                        <div class="flex justify-between items-center" data-accordion-header>
+                            <h3 class="text-xl font-semibold">Is my laundry insured?</h3>
+                            <i class="fas fa-plus text-gray-400 text-lg transition-transform duration-300"></i>
+                        </div>
+                        <div class="pt-4 hidden" data-accordion-content>
+                            <p class="text-gray-300 leading-relaxed text-left">
+                                Reputable laundry providers on CleanMat typically offer insurance for your garments.
+                                Please check the specific provider's terms for details.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="how-it-works" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-12">How does CleanMat Work?</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                    <div
+                        class="bg-[#1A1A2E] text-white rounded-lg shadow-xl p-8 flex flex-col items-center text-center">
+                        <div class="relative w-full mb-6">
+                            <span
+                                class="absolute -top-6 -left-6 bg-white text-[#1ABC9C] rounded-full h-10 w-10 flex items-center justify-center text-lg font-bold shadow-md">1</span>
+                            <div
+                                class="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                                <i class="fas fa-calendar-check text-[#1ABC9C] text-6xl"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Schedule A Pickup</h3>
+                        <p class="text-sm">Click on the Schedule a Pickup button to get started.</p>
+                    </div>
+
+                    <div
+                        class="bg-[#1A1A2E] text-white rounded-lg shadow-xl p-8 flex flex-col items-center text-center">
+                        <div class="relative w-full mb-6">
+                            <span
+                                class="absolute -top-6 -left-6 bg-white text-[#1ABC9C] rounded-full h-10 w-10 flex items-center justify-center text-lg font-bold shadow-md">2</span>
+                            <div
+                                class="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                                <i class="fas fa-file-invoice text-[#1ABC9C] text-6xl"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Input Your Information</h3>
+                        <p class="text-sm">Let us know when you want your pickup laundry service.</p>
+                    </div>
+
+                    <div
+                        class="bg-[#1A1A2E] text-white rounded-lg shadow-xl p-8 flex flex-col items-center text-center">
+                        <div class="relative w-full mb-6">
+                            <span
+                                class="absolute -top-6 -left-6 bg-white text-[#1ABC9C] rounded-full h-10 w-10 flex items-center justify-center text-lg font-bold shadow-md">3</span>
+                            <div
+                                class="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                                <i class="fas fa-tshirt text-[#1ABC9C] text-6xl"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Have Your Laundry Ready </h3>
+                        <p class="text-sm">Place your laundry in a laundry bag or garbage bag for when the driver
+                            arrives.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="customers-and-impact" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12">
+                    Our Impact & Growth
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div
+                        class="bg-[#C0CFD6] text-dark rounded-lg shadow-200 rounded-lg p-8 shadow-lg flex flex-col justify-between">
+                        <div>
+                            <p class="text-4xl md:text-5xl font-bold mb-2">250k+</p>
+                            <h3 class="text-xl font-semibold mb-4">Users on the platform</h3>
+                        </div>
+                        <p class="text-sm opacity-90">
+                            Our growing community of users relies on CleanMat for their laundry needs.
+                        </p>
+                    </div>
+
+                    <div class="bg-gray-800 text-white rounded-lg p-8 shadow-lg flex flex-col justify-between">
+                        <div>
+                            <p class="text-4xl md:text-5xl font-bold mb-2">$8M+</p>
+                            <h3 class="text-xl font-semibold mb-4">Generated for partners</h3>
+                        </div>
+                        <p class="text-sm opacity-90">
+                            We're proud that our partners have made over $8 million in total revenue through our
+                            platform.
+                        </p>
+                    </div>
+
+                    <div class="bg-purple-700 text-white rounded-lg p-8 shadow-lg flex flex-col justify-between">
+                        <div>
+                            <p class="text-4xl md:text-5xl font-bold mb-2">400k+</p>
+                            <h3 class="text-xl font-semibold mb-4">Transactions this year</h3>
+                        </div>
+                        <p class="text-sm opacity-90">
+                            A testament to the bustling activity and trust in our mobile laundry service network.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <a href="https://wa.me/YOURPHONENUMBER" target="_blank"
+        class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white rounded-full p-3 shadow-lg z-50 transition duration-300 ease-in-out">
+        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.67.42 3.24 1.15 4.6l-1.17 4.29 4.38-1.15c1.33.72 2.86 1.11 4.55 1.11 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm3.39 14.73c-.2-.09-.94-.46-1.08-.51-.15-.05-.26-.07-.37.07-.12.14-.46.51-.57.61-.1.1-.2.11-.37.05-.15-.05-.53-.2-1.27-.78-.94-.74-1.57-1.4-1.76-1.71-.2-.3-.02-.46.09-.57.1-.1.22-.26.33-.39.1-.12.14-.2.2-.33.07-.15.03-.28-.01-.39-.04-.11-.37-.9-.5-.19-.13.71-.06 1.64.62 2.45.63.76 1.25 1.1 2.06 1.39.77.26 1.48.24 2.04.15.65-.11 1.07-.69 1.22-.98.15-.3.15-.56.1-.64-.06-.09-.2-.14-.4-.23z" />
+        </svg>
+    </a>
+
+    <footer id="footer" class="bg-[#1a1a2e] text-white py-10 px-5 text-sm">
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-between gap-x-8 gap-y-8">
+            <div class="flex flex-col items-start flex-grow flex-shrink-0 basis-[250px]">
+                <div class="flex items-center mb-4">
+
+                    <p class="text-2xl font-bold">CleanMat</p>
+                </div>
+                <p class="leading-relaxed mb-5">Connect with laundry service providers in your area.</p>
+                <button
+                    class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-md cursor-pointer text-base font-bold no-underline transition-colors duration-300 ease-in-out">
+                    Book a Service
+                </button>
+            </div>
+
+            <div class="flex flex-wrap justify-around gap-x-5 gap-y-8 flex-grow-[2] flex-shrink-0 basis-[500px]">
+                <div class="flex-grow flex-shrink-0 basis-[150px]">
+                    <h4 class="text-base mb-4 text-[#92e6e6] uppercase">Solutions</h4>
+                    <ul class="list-none p-0 m-0">
+                        <li class="mb-2"><a href="#"
+                                class="text-white no-underline hover:text-blue-500 transition-colors duration-300 ease-in-out">Marketing</a>
+                        </li>
+                        <li class="mb-2"><a href="#"
+                                class="text-white no-underline hover:text-blue-500 transition-colors duration-300 ease-in-out">Analytics</a>
+                        </li>
+                        <li class="mb-2"><a href="#"
+                                class="text-white no-underline hover:text-blue-500 transition-colors duration-300 ease-in-out">Automation</a>
+                        </li>
+                        <li class="mb-2"><a href="#"
+                                class="text-white no-underline hover:text-blue-500 transition-colors duration-300 ease-in-out">Commerce</a>
+                        </li>
+                        <li class="mb-2"><a href="#"
+                                class="text-white no-underline hover:text-blue-500 transition-colors duration-300 ease-in-out">Insights</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-grow flex-shrink-0 basis-[150px]">
+                    <h4 class="text-base mb-4 text-[#92e6e6] uppercase">Support</h4>
+                    <ul class="list-none p-0 m-0">
+                        <li class="mb-2"><a href="#"
+                                class="text-white no-underline hover:text-blue-500 transition-colors duration-300 ease-in-out">Submit
+                                ticket</a></li>
+                        <li class="mb-2"><a href="#"
+                                class="text-white no-underline hover:text-blue-500 transition-colors duration-300 ease-in-out">Documentation</a>
+                        </li>
+                        <li class="mb-2"><a href="#"
+                                class="text-white no-underline hover:text-blue-500 transition-colors duration-300 ease-in-out">Guides</a>
+                        </li>
+                        <li class="mb-2"><a href="#"
+                                class="text-white no-underline hover:text-blue-500 transition-colors duration-300 ease-in-out">Jobs</a>
+                        </li>
+                        <li class="mb-2"><a href="#"
+                                class="text-white no-underline hover:text-blue-500 transition-colors duration-300 ease-in-out">Press</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-grow flex-shrink-0 basis-[150px]">
+                    <h4 class="text-base mb-4 text-[#92e6e6] uppercase">Company</h4>
+                    <ul class="list-none p-0 m-0">
+                        <li class="mb-2"><a href="#"
+                                class="text-white no-underline hover:text-blue-500 transition-colors duration-300 ease-in-out">About</a>
+                        </li>
+                        <li class="mb-2"><a href="#"
+                                class="text-white no-underline hover:text-blue-500 transition-colors duration-300 ease-in-out">Blog</a>
+                        </li>
+                        <li class="mb-2"><a href="#"
+                                class="text-white no-underline hover:text-blue-500 transition-colors duration-300 ease-in-out">Jobs</a>
+                        </li>
+                        <li class="mb-2"><a href="#"
+                                class="text-white no-underline hover:text-blue-500 transition-colors duration-300 ease-in-out">Press</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-grow flex-shrink-0 basis-[150px]">
+                    <h4 class="text-base mb-4 text-[#92e6e6] uppercase">Legal</h4>
+                    <ul class="list-none p-0 m-0">
+                        <li class="mb-2"><a href="#"
+                                class="text-white no-underline hover:text-blue-500 transition-colors duration-300 ease-in-out">Terms
+                                of service</a></li>
+                        <li class="mb-2"><a href="#"
+                                class="text-white no-underline hover:text-blue-500 transition-colors duration-300 ease-in-out">Privacy
+                                policy</a></li>
+                        <li class="mb-2"><a href="#"
+                                class="text-white no-underline hover:text-blue-500 transition-colors duration-300 ease-in-out">License</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-col flex-grow flex-shrink-0 basis-[300px]">
+                <div class="mb-8">
+                    <h4 class="text-base mb-4 text-[#92e6e6] uppercase">Get in touch!</h4>
+
+                    <p class="mb-2">Avenida Rainha Dona Amélia 26-A 1600-679 Lisboa Portugal</p>
+
+                    <p class="mb-2">info@clicknclean.pt</p>
+
+                    <p class="mb-2">913874118</p>
+                </div>
+                <div>
+                    <h4 class="text-base mb-4 text-[#92e6e6] uppercase">FOLLOW US</h4>
+                    <a href="#"
+                        class="text-white text-2xl mr-4 no-underline transition-colors duration-300 ease-in-out hover:text-blue-500"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#"
+                        class="text-white text-2xl no-underline transition-colors duration-300 ease-in-out hover:text-blue-500"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-10 pt-5 border-t border-gray-700 text-gray-400">
+            <p>&copy; 2025 CleanMat. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
