@@ -1,0 +1,3 @@
+[build]
+  command = ""      # or your Tailwind build script
+  publish = "."     # point Netlify at the project root
