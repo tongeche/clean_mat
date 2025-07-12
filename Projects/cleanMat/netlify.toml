@@ -1,4 +1,9 @@
 [build]
-  base    = "projects/cleanmat"
+  # remove or comment out the base line entirely
+  # base    = "projects/cleanmat"
+
+  # publish from the repo root (where index.html lives)
   publish = "."
-  command = ""    # or your Tailwind build script, if you ever add one
+
+  # if you have no build step, you can leave this empty
+  command = ""
