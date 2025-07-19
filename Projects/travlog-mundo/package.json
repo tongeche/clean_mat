@@ -4,13 +4,10 @@
   "description": "Your One-Stop Travel and Booking Website",
   "main": "index.js",
   "scripts": {
-    "build:tailwind": "tailwindcss -i ./src/input.css -o ./public/dist/output.css",
-    "watch:tailwind": "tailwindcss -i ./src/input.css -o ./public/dist/output.css --watch",
     "start": "npm run watch:tailwind",
-    "build": "npm run build:tailwind",
-    "dev:css": "tailwindcss -i ./css/src/styles.css -o ./css/main.css --watch",
     "build:css": "tailwindcss -i ./css/src/styles.css -o ./css/main.css --minify",
-    "build:js": "esbuild js/main.js --bundle --outfile=public/js/bundle.js --minify"
+    "build:js": "esbuild js/src/main.js --bundle --minify --outfile=js/main.js --define:import.meta.env.VITE_SUPABASE_URL=\\\"$VITE_SUPABASE_URL\\\" --define:import.meta.env.VITE_SUPABASE_KEY=\\\"$VITE_SUPABASE_KEY\\\"",
+    "build": "npm run build:css && npm run build:js"
   },
   "keywords": [
     "travel",
@@ -37,8 +34,9 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
-    "@supabase/supabase-js": "^2.51.0",
+    "@supabase/supabase-js": "^2.52.0",
     "alpinejs": "^3.14.9",
+    "amadeus": "^11.0.0",
     "dotenv": "^17.2.0",
     "node-fetch": "^3.3.2"
   },
